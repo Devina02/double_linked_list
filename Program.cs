@@ -15,4 +15,15 @@ namespace double_linked_list
         //pointto the preceeding node
         public Node prev;
     }
+    class DoubleLinkedList
+    {
+        Node START;
+
+        //constructor
+
+        public void addNote()
+        {
+
+        }
+    }
 }
