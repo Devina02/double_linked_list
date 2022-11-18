@@ -158,7 +158,17 @@ namespace double_linked_list
     }
     class Program
     {
-        
+        static void Main(string[] args)
+        {
+            DoubleLinkedList obj = new DoubleLinkedList();
+            while(true)
+            {
+                try
+                {
+
+                }
+            }
+        }
 
     }
 }
