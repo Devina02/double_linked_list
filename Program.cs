@@ -69,8 +69,23 @@ namespace double_linked_list
             //if the node is to be inserted at the end of the list
             if (current == null)
             {
-
+                newNode.next = null;
+                previous.next = newNode;
+                return;
             }
+            current.prev = newNode;
+            current.next = newNode;
+        }
+        public bool Search(int rollNo, ref Node previous, ref Node current)
+        {
+            previous = current = START;
+            while (current != null &&
+                rollNo != current.noMhs)
+            {
+                previous = current;
+                current = current.next;
+            }
+            return (current != null);
         }
     }
 }
