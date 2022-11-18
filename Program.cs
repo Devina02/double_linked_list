@@ -127,7 +127,8 @@ namespace double_linked_list
             {
                 Console.WriteLine("\nRecord in the ascending order of" + "Roll number are:\n");
                 Node currentNode;
-                
+                for (currentNode = START; currentNode != null; currentNode = currentNode.next)
+                    Console.Write(currentNode.noMhs + currentNode.name + "\n");
             }
         }
     }
